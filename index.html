@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Soares</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "carrosel.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo do Espaço Soares">
+        <div class="nav" id="navbar"> 
+            <img src="img/barra-lateral1.png" alt="" onclick="NavbarLateral()">
+            
+        </div>
+    </header>
+    <aside id="nav-lateral" class="nav-close">
+        <button onclick="NavbarLateralclose()">✕</button>
+            <nav>
+                <ul>
+                    <li class="navegacao"><a href="#sobre">Sobre</a></li>
+                    <li class="navegacao"><a href="#quartos">Quartos</a></li>
+                    <li class="navegacao"><a href="#contato">Contato</a></li>
+                    <li class="navegacao"><a href="#mapa">Mapa</a></li>
+                </ul>
+            </nav>
+            <button id="entr-ctt">Entrar em Contato</button>
+    </aside>
+    <section class="picture">
+        <div class="slider">
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+
+      <div class="content">
+        <h1>Bem-vindo ao <strong style="color:#004C45;  text-shadow:  1px 0 #B8D1A3, -1px 1px 0 #B8D1A3; font-size: 1.5em;">Espasoares</strong></h1>
+        <p>O lugar perfeito para relaxar e aproveitar momentos inesquecíveis.</p>
+        <button style="margin-top: 20px; border-radius: 8px;">Reserve agora</button>
+
+      </div>
+       
+    </section>
+    <section class="sobre" id="sobre">
+        <article class="txt">
+            <h2>Sobre o Espasoares</h2>
+            <p>Conheça nossa história e o que nos torna diferentes.</p>
+
+            <div class="texto">
+                <p>Nascemos de um sonho simples, mas poderoso: criar um lugar onde as correrias do dia a dia dão lugar ao som dos pássaros e ao riso das crianças. Localizado no coração da deslumbrante Serra de Maranguape, no acolhedor município de Jubaia - CE, o Espaço Soares é mais do que um local para alugar no final de semana; é o cenário ideal para construir memórias inesquecíveis com quem você ama.</p>
+            </div>
+        </article>
+        <div class="video">
+            <img src="img/bg-header.png" alt="" class="slide-img" >
+            <video controls autoplay muted loop >
+                <source src="img/video-inst.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <img src="img/bg-header.png" alt="" class="slide-img" style="border-radius: 0px 8px 8px 0px;" >
+
+        </div>
+
+    </section>
+    <span class="line">.</span>
+    <section class="info" id="quartos">
+        <div class="icon">
+            <h2>INCLUSO NA CASA</h2>
+            <ul class="list-icon">
+                <li><img src="icon/cama-alt.png" alt="" style="width: 1.5rem; padding-right: 4px;"> 6 Quartos <p style="font-size: 0.9rem; color:#504d4d;">(2 suites climatizadas)</p></li>
+
+                <li><img src="icon/banho.png" style="width: 1.5rem; padding-right: 4px;" alt=""> 2 Banheiros</li>
+
+                <li><img src="icon/piscina.png" alt="" style="width: 1.5rem; padding-right: 4px;"> Piscina</li>
+
+                <li><img src="icon/fogo-de-grelha.png" alt="" style="width: 1.5rem; padding-right: 4px;  "> Deck</li>
+                
+                <li><img src="icon/wi-fi.png" alt="" style="width: 1.5rem; padding-right: 4px; "> Wi-Fi</li>
+
+                <li><img src="icon/garagem.png" alt="" style="width: 1.5rem; padding-right: 4px;  "> Garagem <p style="font-size: 0.9rem; color:#504d4d;">(4 vagas)</p></li>
+
+                <li><img src="icon/quadra.png" alt="" style="width: 1.5rem; padding-left: 4px; "> Quadra de areia </li>
+            </ul>
+
+        </div>
+   
+        <h2>Acomodaçoes</h2>
+      <div class="acomodaçoes">
+         <div id="mostrar-quartos" class="mostrar-secao">
+            <nav id="quartos" onclick="mostrarseçao('quartos')">
+                <h3>Quartos</h3>
+            </nav>
+            <div class="quartos" id="secao-comodis">
+                <img src="img/img1.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+            </div>
+        </div>
+        <div id="mostrar-cozinha" class="mostrar-secao">
+            <nav id="cozinha" onclick="mostrarseçao('cozinha')">
+                <h3>Cozinha</h3>
+            </nav>
+           <div class="cozinha" id="secao-comodis">
+                
+                <img src="img/img1.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt=""> 
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+           </div>
+        </div>
+         <div id="mostrar-lazer" class="mostrar-secao">
+            <nav id="lazer" onclick="mostrarseçao('lazer')">
+                <h3>Lazer</h3>
+            </nav>
+            <div class="lazer" id="secao-comodis"> 
+               
+                <img src="img/img1.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+            </div>
+         </div>
+      </div>
+    
+    </section class="contato" id="contato">
+        <h2> Consulte fim de semana disponiveis</h2>
+          
+       <button>Reserve ja</button>
+
+    </section>
+    <section class="mapa" id="mapa">
+
+    </section>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
