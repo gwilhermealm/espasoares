@@ -1,4 +1,7 @@
 
+.picture{
+  box-shadow:-1px 1px 11px 1px rgba(59, 59, 59, 0.63); 
+}
 .slider {
   width: 100vw;
   height: 100vh;
