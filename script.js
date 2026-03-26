@@ -28,3 +28,9 @@ function mostrarseçao(classname) {
     }else {        console.log('Secao nao encontrada');
     }
 }
+function Reservar(){
+    const urlWaMe = 'https://wa.me/558586165221?text=Olá%20gostaria%20de%20fazer%20uma%20reserva';
+
+     window.open(urlWaMe, '_blank');
+}
+

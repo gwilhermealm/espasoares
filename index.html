@@ -26,7 +26,7 @@
                     <li class="navegacao"><a href="#mapa">Mapa</a></li>
                 </ul>
             </nav>
-            <button id="entr-ctt">Entrar em Contato</button>
+            <button id="entr-ctt" onclick="Reservar()">Entrar em Contato</button>
     </aside>
     <section class="picture">
         <div class="slider">
@@ -39,7 +39,7 @@
       <div class="content">
         <h1>Bem-vindo ao <strong style="color:#004C45;  text-shadow:  1px 0 #B8D1A3, -1px 1px 0 #B8D1A3; font-size: 1.5em;">Espasoares</strong></h1>
         <p>O lugar perfeito para relaxar e aproveitar momentos inesquecíveis.</p>
-        <button style="margin-top: 20px; border-radius: 8px;">Reserve agora</button>
+        <button style="margin-top: 20px; border-radius: 8px;" onclick="Reservar()">Reserve agora</button>
 
       </div>
        
@@ -128,13 +128,15 @@
             </div>
          </div>
       </div>
-    
-    </section class="contato" id="contato">
-        <h2> Consulte fim de semana disponiveis</h2>
+    </section>
+
+    <section class="reservar" id="contato">
+        <h2> CONSULTE FINS DE SEMANA DISPONÍVEIS</h2>
           
-       <button>Reserve ja</button>
+       <button onclick="Reservar()">Reserve ja</button>
 
     </section>
+
     <section class="mapa" id="mapa" style="text-align: center;">
         <div class="tit-loc">
             <h2>Localização</h2>
@@ -149,7 +151,12 @@
 
     </section>
     <footer>
-        
+        <ul style="display: flex; justify-content: center; gap: 20px;">
+            <li><a href="https://www.instagram.com/espasoares/"><img src="icon/instagram-circle.png" alt=""></a></li>
+            <li><a href="#quartos" onclick="Reservar()"><img src="icon/whatsapp-circle.png" alt=""></a></li>
+        </ul>
+        <p><a href="https://www.instagram.com/gwi.lherme30/" style="font-size: 1em;">by Guilherme Almeida</a></p>
+        <p>© 2026 - Todos os direitos reservados</p>
     </footer>
     <script src="script.js"></script>
 </body>
