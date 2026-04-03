@@ -33,4 +33,13 @@ function Reservar(){
 
      window.open(urlWaMe, '_blank');
 }
+window.addEventListener('load', () => {
+    const video = document.querySelector('.video video');
+    if (video) {
+        video.play().catch(error => {
+            console.log("Autoplay bloqueado pelo navegador:", error);
+        });
+    }
+});
+
 
