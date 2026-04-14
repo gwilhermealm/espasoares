@@ -1,3 +1,5 @@
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+
 function NavbarLateral() { 
     const navbar = document.getElementById('nav-lateral');
     navbar.classList.toggle('nav-close');
